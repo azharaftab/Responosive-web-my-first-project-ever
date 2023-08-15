@@ -1,0 +1,345 @@
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(186, 190, 194);
+    padding: 0;
+    margin: 0;
+}
+/* ---------------------------navbar-styling------------------------------- */
+.header{
+    background-color: blanchedalmond;
+}
+
+header{
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: space-between;
+}
+
+nav li{
+    flex-basis: 48%;
+    margin-bottom: 0.5rem;
+}
+
+nav li:first-child{
+    flex-basis: 100%;
+    text-align: center;
+}
+
+nav a{
+    text-decoration: none;
+    display: block;
+    color: white;
+    background-color: rgb(138, 22, 22);
+    font-size: 1,2rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+ul a:hover{
+    background-color: transparent;
+    background-color: black;
+    color: white;
+    box-shadow: 2px 2px 2px black;
+    transition: all 1s;
+}
+
+
+/* ------------------------------------------Our Mission-------------------------------------- */
+#mission{
+    margin-bottom: 3rem;
+    margin-left: 1em;
+}
+.mission-text{
+    display: block;
+    line-height: 1.7;
+}
+.mission-img{
+    max-height: 100px;
+    display: block;
+    height: 30vh;
+}
+
+/* ---------------------------------------------collection-figure--------------------------------- */
+.container{
+    width: 70%;
+    margin: auto;
+}
+figure{
+    margin: 0 0 0.5rem 0;
+    padding: 0;
+    max-height: 400px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 3px 3px 3px black;
+    /* border-style: solid; */
+    /* border-radius: 5px; */
+    transition: all 2s;
+    justify-content: space-between;
+}
+figure img:hover{
+    transform: rotate(-3deg);
+    transition: all 1s ease-in-out;
+    box-shadow: 2px 2px 2px black;
+}
+figure :hover{
+    box-shadow: 4px 4px 4px black;
+    transition: all 2s;
+}
+section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+figure img{
+    margin-bottom: -4px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 -150px;
+}
+figcaption{
+    background-color: rgb(177, 185, 192, 0.8);
+    font-size: 1.875rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+figcaption a{
+    display: block;
+    text-decoration: none;
+    padding: 1rem;
+    color: black;
+}
+section h2{
+    font-size: 50px;
+    margin-left: 30px;
+}
+.figure1-container{
+    background-color: darkmagenta;
+}
+.figure1-container h1{
+    padding-top: 1em;
+    font-size: 40px;
+    padding-left: 1em;
+    color: white;
+}
+
+#too-cool img{
+    margin-bottom: -6px;
+    width: 100%;
+    object-fit: cover;
+    object-position: 0 -50px;
+}
+#too-cool{
+    width: 100%;
+}
+/* -------------------------------------footer----------------------------------------- */
+
+
+footer{
+    background-color: blanchedalmond;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 3rem;
+    max-width: 1364px;
+    margin: 0 auto;
+}
+
+footer h4{
+    margin-top: 0;
+    font-size: large;
+}
+
+footer ul{
+    list-style-type: none;
+    display: flex;
+    flex-flow: row wrap;
+    padding: 0;
+    margin: 0;
+}
+footer li{
+    margin-right: 1rem;
+}
+address{
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+/* --------------------------banner-------------------- */
+#banner img{
+    /* max-width: 1200px; */
+    width: 100%;
+}
+.banner-div{
+    background-color: orange;
+    display: flex;
+}
+
+
+/* =================================Responsive-designing---------------------------------------- */
+
+
+@media (min-width: 550px) {
+
+    /* ---------------navbar----------------- */
+
+
+
+    header{
+        padding: 3rem;
+        
+    }
+    nav ul{
+        justify-content: center;
+        gap: 1.2em;
+    }
+    nav li{
+        flex-basis: auto;
+        margin-bottom: 0;
+        
+    }
+    nav a {
+        color: black;
+        background-color: transparent;
+        padding: 0;
+    }
+    nav a :hover{
+        background-color: transparent;
+        color: transparent;
+    }
+
+    .menu a:hover{
+        background-color: transparent;
+        box-shadow: none;
+        color: blue;
+    }
+
+
+    /* ===============our mission======================= */
+
+    
+    .mission-text{
+        display: flow-root;
+        max-width: 900px;
+        
+    }
+    .mission-img{
+        float: left;
+        shape-outside: polygon(35.84% 94.87%, 34.64% 87.05%, 51.64% 4.06%, 55.1% 2.38%);
+        max-height: 211px;
+    }
+    /* ---------------------------------collection-figure---------------------------  */
+
+    section ul{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    section li{
+        flex-basis: 49.5%;
+    }
+    
+    figure img{
+        object-position: 0;
+    }
+    .scoot{
+        flex-basis: 100%;
+    }
+    .scoot img{
+        margin-bottom: -6px;
+        width: 100%;
+        object-fit: cover;
+        object-position: 0 -250px;
+    }
+
+    #too-cool img{
+        flex-basis: 100%;
+    }
+    /* ------------------------------footer-styles------------------------------ */
+
+    footer{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+    .logo2{
+        margin-top: auto;
+    }
+    address{
+        flex-basis: 49.5%;
+        /* margin-top: -22px; */
+    }
+}
+@media (min-width: 800px) {
+    nav ul{
+        justify-content: flex-end;
+    }
+    nav li:first-child{
+        flex-basis: auto;
+        margin: 0 auto;
+        order: 2;
+    }
+    nav li:nth-child(2),
+    nav li:nth-child(3){
+        order: 1;
+    }
+    nav li:nth-child(4),
+    nav li:nth-child(5){
+        order: 3;
+    }
+
+    .menu a:hover{
+        background-color: transparent;
+        box-shadow: none;
+        color: blue;
+    }
+
+/* ------------------------collection-figure------------------------- */
+    section h2{
+        margin-left: 100px;
+    }
+    section li{
+        flex-basis: 32.5%;
+    }
+    .scoot{
+        flex-basis: 32.5%;
+    }
+    .scoot img{
+        margin-bottom: -4px;
+        width: 100%;
+        object-fit: cover;
+        object-position: 0 -50px;
+    }
+/* -----------------banner------------- */
+    #banner img{
+        max-width: 70%;
+        margin: auto;
+        background-color: orange;
+    }
+    
+    /* =================footer---------------- */
+
+    .logo2{
+        flex-basis: 32.5;
+    }
+    address{
+        flex-basis: 65.5%;
+    }
+
+}
